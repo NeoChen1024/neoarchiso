@@ -60,7 +60,6 @@ fcitx-chewing
 fcitx-configtool
 fcitx-gtk2
 fcitx-gtk3
-fcitx-qt4
 fcitx-qt5
 fcitx-table-extra
 feh
@@ -236,10 +235,11 @@ xorg-twm
 xorg-xinit
 xosview2
 xterm
-yaourt
 zip
 zlib
 zsh
 zsh-completions
 zsh-syntax-highlighting
 zstd
+pikaur
+rofi

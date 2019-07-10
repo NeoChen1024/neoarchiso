@@ -1,3 +1,4 @@
+w
 #!/bin/bash
 
 set -e -u
@@ -23,3 +24,4 @@ systemctl enable pacman-init.service choose-mirror.service
 systemctl set-default multi-user.target
 systemctl enable gpm
 fc-list > /dev/null 2>&1
+touch ~/.rasi

@@ -25,3 +25,10 @@ systemctl set-default multi-user.target
 systemctl enable gpm
 fc-list > /dev/null 2>&1
 touch ~/.rasi
+
+(
+	git clone https://gitlab.com/Neo_Chen/neozshrc
+	cd neozshrc
+	export PREFIX=/etc/skel
+	yes y | ./install
+)

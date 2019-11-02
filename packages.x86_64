@@ -246,3 +246,12 @@ rofi
 gparted
 qbittorrent-nox
 qbittorrent
+gparted
+hwloc
+cmake
+libuv
+libmicrohttpd
+quagga
+tinc
+ttf-sarasa-gothic
+ttf-iosevka-term-slab

@@ -196,7 +196,7 @@ xosview*tzoneHotTrip: 60
 xosview*tzoneCritTrip:	75
 xosview*tzonePeak: 100
 
-"Enabled modi" Set from: Default
+!"Enabled modi" Set from: Default
 rofi.modi:                           window,run,ssh
 ! "Window width" Set from: Default
 rofi.width:                          80
@@ -205,7 +205,7 @@ rofi.lines:                          25
 ! "Number of columns" Set from: Default
 rofi.columns:                        1
 ! "Font to use" Set from: Default
-rofi.font:                           xos4 Terminus 12
+rofi.font:                           Sarasa Term TC Light 12
 ! "Border width" Set from: Default
 rofi.bw:                             1
 ! "Location on screen" Set from: Default

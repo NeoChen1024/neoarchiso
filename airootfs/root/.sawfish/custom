@@ -1,17 +1,18 @@
 ;; Sawfish user customization -- do not edit by hand!
 ;; Use the configurator instead.
-;; sawfish version 1.12.90, written Wed Feb 27 17:37:32 2019
+;; sawfish version 1.12.90, written Sat Nov  2 17:24:18 2019
 
-(custom-set-keymap (quote global-keymap) (quote (keymap (cabinet-switch . "Super-TAB") ((run-shell-command "rofi -show run") . "Mod1-D") ((run-shell-command "scrot /RAMDISK/\"%s\".png") . "M-C-s") (send-to-previous-workspace . "C-S-Left") (send-to-next-workspace . "C-S-Right") (cycle-windows . "M-TAB") ((run-shell-command "zsh -c 'dmenu -i -fn Terminus -p \"WORD\" < ~/Document/MISC/dict | xclip -selection clipboard'") . "M-C-q") ((run-shell-command "rofi -show run") . "M-C-d") ((run-shell-command "rofi -run window") . "M-C-a") (previous-workspace . "M-C-Left") (next-workspace . "M-C-Right") (maximize-window-fullscreen-toggle . "M-C-p"))))
-(custom-set-typed-variable (quote mxflat:title-y-adjustment) (quote -8) (quote (number -10000 10000)))
-(custom-set-typed-variable (quote mxflat:title-font) (quote ("Pango" . "Unifont Medium 12")) (quote font))
-(custom-set-typed-variable (quote default-font) (quote ("Pango" . "Unifont Medium 12")) (quote font))
+(custom-set-keymap (quote global-keymap) (quote (keymap (cabinet-switch . "Super-TAB") ((run-shell-command "light -A 5") . "XF86MonBrightnessUp") ((run-shell-command "light -U 5") . "XF86MonBrightnessDown") ((run-shell-command "rofi -show run") . "Mod1-D") ((run-shell-command "scrot /RAMDISK/\"%s\".png") . "M-C-s") (send-to-previous-workspace . "C-S-Left") (send-to-next-workspace . "C-S-Right") (cycle-windows . "M-TAB") ((run-shell-command "zsh -c 'dmenu -i -fn Terminus -p \"WORD\" < ~/Document/MISC/dict | xclip -selection clipboard'") . "M-C-q") ((run-shell-command "rofi -show run") . "M-C-d") ((run-shell-command "rofi -run window") . "M-C-a") (previous-workspace . "M-C-Left") (next-workspace . "M-C-Right") (maximize-window-fullscreen-toggle . "M-C-p"))))
+(custom-set-typed-variable (quote mxflat:title-height) (quote 25) (quote (number 9 1000)))
+(custom-set-typed-variable (quote mxflat:title-y-adjustment) (quote 0) (quote (number -10000 10000)))
+(custom-set-typed-variable (quote mxflat:title-font) (quote ("Pango" . "Sarasa Term TC Light 12")) (quote font))
+(custom-set-typed-variable (quote default-font) (quote ("Pango" . "Sarasa Term TC Light 12")) (quote font))
 (custom-set-typed-variable (quote default-frame-style) (quote mxflat) (quote frame-style))
+(custom-set-typed-variable (quote focus-mode) (quote enter-exit) (quote symbol))
 (custom-set-keymap (quote root-window-keymap) (quote (keymap (popup-root-menu . "Button3-Click"))))
 (custom-set-keymap (quote window-keymap) (quote (keymap (tab-raise-right-window . "H-ISO_Left_Tab") (popup-window-ops-menu . "M-C-Button1-Click") (tab-raise-left-window . "W-ISO_Left_Tab") (raise-and-pass-through-click . "Button1-Click") (move-window-interactively . "W-Button1-Move") (popup-window-ops-menu . "W-Button2-Click") (raise-lower-window . "W-Button3-Click"))))
 (custom-set-typed-variable (quote prompt-color) (quote ("#ff00ff00ff00" . "#000000000000")) (quote (pair (labelled "Foreground:" color) (labelled "Background:" color))))
 (custom-set-typed-variable (quote unshade-selected-windows) (quote t) (quote boolean))
-(custom-set-typed-variable (quote focus-mode) (quote enter-exit) (quote symbol))
 (custom-set-typed-variable (quote right-edge-move-action) (quote expand-window) (quote (choice none/hot-move viewport-drag flip-workspace flip-viewport expand-window maximize-window kill-window iconify-window move-window-viewport move-window-workspace)))
 (custom-set-typed-variable (quote left-edge-move-action) (quote expand-window) (quote (choice none/hot-move viewport-drag flip-workspace flip-viewport expand-window maximize-window kill-window iconify-window move-window-viewport move-window-workspace)))
 (custom-set-typed-variable (quote top-edge-move-action) (quote maximize-window) (quote (choice none/hot-move viewport-drag flip-workspace flip-viewport expand-window maximize-window kill-window iconify-window move-window-viewport move-window-workspace)))
@@ -43,7 +44,6 @@
 (custom-set-typed-variable (quote mxflat:button-distance) (quote 2) (quote (number 0 1000)))
 (custom-set-typed-variable (quote mxflat:button-left-offset) (quote 2) (quote (number 0 1000)))
 (custom-set-typed-variable (quote mxflat:button-size) (quote 19) (quote (number 1 1000)))
-(custom-set-typed-variable (quote mxflat:title-height) (quote 23) (quote (number 9 1000)))
 (custom-set-keymap (quote title-keymap) (quote (keymap (move-window-interactively . "Button1-Move") (maximize-window-toggle . "Button1-Off2") (tab-release-window . "Button3-Click") (popup-window-ops-menu . "Button3-Off"))))
 (custom-set-typed-variable (quote workspace-names) (quote ("VD_0" "VD_1" "VD_2" "VD_3")) (quote (list string "Workspace names")))
 (custom-set-typed-variable (quote workspace-boundary-mode) (quote wrap-around) (quote (choice stop wrap-around keep-going)))

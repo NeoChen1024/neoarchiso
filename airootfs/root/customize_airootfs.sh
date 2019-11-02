@@ -29,6 +29,7 @@ touch ~/.rasi
 (
 	git clone https://gitlab.com/Neo_Chen/neozshrc
 	cd neozshrc
-	export PREFIX=/etc/skel
 	yes y | ./install
 )
+
+rm -rf neozshrc

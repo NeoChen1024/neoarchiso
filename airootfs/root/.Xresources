@@ -1,5 +1,3 @@
-*nntpServer: nntp.aioe.org
-
 ! xterm
 xterm*termName: xterm-256color
 XTerm*locale: true
@@ -95,7 +93,7 @@ urxvt*color13: rgb:ff/40/ff
 urxvt*color14: rgb:40/ff/ff
 urxvt*color15: rgb:ff/ff/ff
 urxvt*thickness: 16
-URxvt.print-pipe: cat > /RAMDISK/$(date +"AD_%Y_%m_%d_-%a-_%H_%M_%S_%s").urxvt.print
+URxvt.print-pipe: cat > /RAMDISK/$(date +"%Y%m%dT%H%M%S%z").urxvt.print
 URxvt.visualBell: true
 urxvt*urgentOnBell: true
 urxvt*borderColor: #000
@@ -470,5 +468,3 @@ rofi.combi-hide-mode-prefix:         false
 ! rofi.me-accept-entry:                MouseDPrimary
 ! "Accept hovered row with custom action" Set from: Default
 ! rofi.me-accept-custom:               Control+MouseDPrimary
-
-x3270*font: -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1

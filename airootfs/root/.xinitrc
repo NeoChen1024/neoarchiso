@@ -7,10 +7,12 @@ echo "$@"
 	gkrellm &
 	tint2 &
 	urxvt &
-#	clipit &
 	dunst &
 	xcompmgr &
+#	picom &
+	parcellite &
 	pasystray &
-	xosview2 &
-	exec sawfish
+#	xosview2 &
+	lxpolkit &
+	icewm
 )

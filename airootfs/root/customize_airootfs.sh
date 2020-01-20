@@ -22,14 +22,21 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
 systemctl enable pacman-init.service choose-mirror.service
 systemctl set-default multi-user.target
-systemctl enable gpm
+
+# Speed up X session startup
 fc-list > /dev/null 2>&1
+
 touch ~/.rasi
 
 (
 	git clone https://gitlab.com/Neo_Chen/neozshrc
 	cd neozshrc
 	yes y | ./install
+)
+(
+	mkdir vcs
+	git clone https://github.com/zdharma/fast-syntax-highlighting.git
+	git clone https://github.com/psprint/zsh-navigation-tools.git
 )
 
 rm -rf neozshrc

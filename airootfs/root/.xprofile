@@ -2,7 +2,7 @@ export XMODIFIERS=@im=fcitx
 export QT_IM_MODULE=fcitx
 export GTK_IM_MODULE=fcitx
 [ -z $QT_QPA_PLATFORMTHEME ] && export QT_QPA_PLATFORMTHEME=qt5ct
-export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
+export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true"
 setxkbmap -option terminate:ctrl_alt_bksp
 setxkbmap -option caps:ctrl_modifier
 xset s off -dpms
@@ -13,4 +13,3 @@ done
 
 xrdb ~/.Xresources
 xsetroot -cursor_name left_ptr
-feh --bg-fill ~/.wallpaper.jpg

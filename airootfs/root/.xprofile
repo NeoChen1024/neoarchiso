@@ -13,3 +13,4 @@ done
 
 xrdb ~/.Xresources
 xsetroot -cursor_name left_ptr
+feh --randomize --bg-fill ~/Wallpaper/

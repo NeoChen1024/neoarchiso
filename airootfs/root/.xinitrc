@@ -3,16 +3,12 @@
 echo "$@"
 . ~/.xprofile
 (
+	wind -f '#000' -b '#fff' -F '#fff' -B '#404040' &
 	fcitx &
-	gkrellm &
 	tint2 &
-	urxvt &
 	dunst &
 	xcompmgr &
-#	picom &
 	parcellite &
 	pasystray &
-#	xosview2 &
-	lxpolkit &
-	icewm
+	urxvt
 )

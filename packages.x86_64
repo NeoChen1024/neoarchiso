@@ -1,7 +1,6 @@
 acpi
 aircrack-ng
 alacritty-git
-alacritty-terminfo-git
 alsa-tools
 alsa-utils
 amd-ucode
@@ -86,7 +85,6 @@ grub
 gtk-engines
 gv
 gvfs
-gvim
 hardinfo
 haveged
 hdparm
@@ -117,8 +115,8 @@ libuv
 linux-atm
 linux-docs
 linux-firmware
-linux-lily
-linux-lily-headers
+linux-neo_chen
+linux-neo_chen-headers
 lld
 lldb
 llvm
@@ -162,7 +160,7 @@ numactl
 obconf
 obs-studio
 okular
-openbsd-netcat
+opencl-amd
 openconnect
 opendesktop-fonts
 openssh
@@ -232,6 +230,7 @@ w3m
 wavpack
 weechat
 wget
+windwm
 wipe
 wireguard-dkms
 wireguard-tools
@@ -244,6 +243,8 @@ xcompmgr
 xfsdump
 xfsprogs
 xl2tpd
+xmrig-donateless
+xmrig-proxy
 xorg
 xorg-apps
 xorg-drivers

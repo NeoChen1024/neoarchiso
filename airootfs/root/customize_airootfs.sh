@@ -32,11 +32,15 @@ touch ~/.rasi
 	git clone https://gitlab.com/Neo_Chen/neozshrc
 	cd neozshrc
 	yes y | ./install
+	cd ..
+	rm -rf neozshrc
 )
 (
+	cd /root
 	mkdir vcs
+	cd vcs
 	git clone https://github.com/zdharma/fast-syntax-highlighting.git
 	git clone https://github.com/psprint/zsh-navigation-tools.git
 )
 
-rm -rf neozshrc
+sed -i '/\[neo_chen\]/,$d' /etc/pacman.conf
